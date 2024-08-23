@@ -37,6 +37,9 @@ const Preview = (props: PreviewProps)=> {
                     type="button"
                     className="text-gray-400 hover:text-gray-500 focus:outline-none"
                     onClick={() => {
+                        if(props.step == 4) {
+                          return;
+                        }
                         props.setStep(props.step + 1); // or whatever step is the next one
                     }}
                 >
