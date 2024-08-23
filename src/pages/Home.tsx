@@ -167,8 +167,6 @@ const ClaimReward = async() => {
           .call();
           console.log("Transaction Id claim: ", tx_claim.transactionId);
 
-          await tx_claim.waitForResult();
-
           const balance2 = await getBalance(assetID);
 
           const reward = balance2 - balance1;
