@@ -80,7 +80,7 @@ const OpenLootbox = async() => {
         }
     }catch(e: any){
 
-        console.log("Error in Create lootbox",e);
+        console.log("Error in Open Lootbox",e);
         toast.error("Error in opening Lootbox")
         return;
 
@@ -184,7 +184,7 @@ const ClaimReward = async() => {
       }
   }catch(e: any){
 
-      console.log("Error in Create lootbox",e);
+      console.log("Error in claiming lootbox",e);
       toast.error("Error in claiming Reward")
       return;
 
