@@ -46,12 +46,12 @@ const Form = (props: FormProps) => {
                 bits: assetID
                }
                const decimal: any = await assetContract.functions.decimals(AssetID).get();
-               console.log(">>>decimal",decimal.value?.Some);
+               console.log(">>>decimal",decimal.value);
             
                 // If the call is successful, it's likely a valid token contract
                if(decimal){
-                props.setDecimal(decimal.value?.Some);
-                return decimal.value?.Some;
+                props.setDecimal(decimal.value);
+                return decimal.value;
                }
                 
               } else {
